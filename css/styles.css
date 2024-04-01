@@ -1,0 +1,320 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  *{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  /* estilos de cabecera */
+  header{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0 0 0 ;
+    background: url("../img/bg-header.png");
+    background-size: cover;
+    background-position: center;
+  }
+  header nav{
+    width: 80%;
+    /* height: 400px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  header nav ul{
+    display: flex;
+  }
+
+  nav ul li { 
+    list-style: none;
+    margin: 0 15px 0 15px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+  }
+
+  nav li a:hover{
+    border-bottom: 2px solid #fff;
+      }
+
+  #logo img{
+    transition: .5s;
+  }
+
+  #logo img:hover{
+    transform: scale(1.10);
+  }
+
+  #hero{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+
+  }
+
+  #hero h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: yellow;
+  }
+
+  #hero h1{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  #hero button{
+    background-color: yellow;
+    font-size: 30px;
+    padding: 12px 30px 12px 30px;
+    border-radius: 14px;
+    color: #999;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+  }
+
+  #hero button:hover{
+    transform: scale(.9);    
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* Estilo planes */
+
+ main {
+    width: 100%;
+    position: relative;
+ }
+
+#planes{ 
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#planes h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#planes p{
+    font-size: 20px;
+}
+
+
+#planes .fila{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+#planes .col-plan{
+    position: relative;
+}
+#planes .col-plan h3{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: yellow;
+    /* Profundidad */
+    /* z-index: -1; */
+}
+
+#planes .col-plan img{
+    transition: .5s;
+}
+
+#planes .col-plan img:hover{
+    border: transparent;
+    border-radius: 60%;
+}
+
+
+/* Estilos destinos */
+
+#destinos {
+    background: url(../img/bg-destinos.png);
+    width: 100%;
+    padding: 20px 0 0 0 ;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#destinos h2{
+    padding-top: 100px;
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+}
+
+#destinos .fila{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+#destinos h3{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+}
+
+#destinos .col-dest img{
+    transition: .5s;
+    cursor: pointer;
+}
+
+#destinos .col-dest img:hover{
+    transform: rotate(360deg);
+}
+
+
+
+/* Estilo contacto */
+
+#contacto {
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+}
+
+#contacto h2{
+    padding-top: 65px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+#contacto p{
+    padding-bottom: 30px;
+    font-weight: 500;
+
+}
+#contacto form{
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#contacto .fila{ 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#contacto input, #contacto select{
+    width: 48%;
+    padding: 8px 10px;
+    margin: 10px 0;
+}
+#contacto button{
+    background-color: rgba(164, 205, 29, 0.831);
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: #fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    transition: .5s;
+}
+
+#contacto button:hover{
+    transform: scale(1.1);
+}
+
+/* Estilo footer */
+
+footer{
+    background: #000;
+    text-align: center;
+    padding: 50px 0; 
+}
+
+footer p{
+    padding: 10px;
+    color: #fff;
+
+}
+/* tablets ipads */
+@media screen and (min-width: 768px) and (max-width: 990px){
+
+}
+
+/* Phones */
+
+@media screen and (min-width: 320px) and (max-width: 680px) {
+  header nav{ 
+    display: block;
+    text-align: center;
+    width: 96%;
+  }
+  header ul{
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+  #hero h2{
+    font-size: 26px;
+  }
+  #hero h1{
+    font-size: 20px;
+  }
+  #hero button{
+    font-size: 20px;
+  }
+
+  #planes .fila{
+    display: block;
+  }
+  #planes h2{
+    font-size: 30px;
+  }
+
+  #planes p{
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+  }
+
+  #planes .col-plan{
+    padding-top: 15px;
+  }
+
+  #destinos .fila{
+    display: block;
+  }
+
+  #contacto .fila{
+    display: block;
+  }
+
+  #contacto input , #contacto select{
+    width: 100%;
+    display: block;
+  }
+
+}
